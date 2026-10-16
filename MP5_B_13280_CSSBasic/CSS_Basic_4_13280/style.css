@@ -1,0 +1,31 @@
+ body{
+            background: linear-gradient(to bottom, rgba(162, 114, 17, 0.9), rgba(132, 86, 12, 0.7));
+            min-height: 100vh;
+            margin: 0;
+        }
+        #informasi {
+            box-shadow: 0 1px 2px 0 #7e5e1580;
+            background-color: #c78e2d66;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:#fee9ca
+        }
+
+        h1 {
+            text-align: center;
+            border: 0.5px solid rgba(126, 94, 21, 0.6);
+            border-radius: 10px;
+            background-color: #efbb6066;
+            color:#fcf0dc;
+        }
+        a{
+            border:2px;
+            background-color: rgba(132, 86, 12, 0.7);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        img{
+            size: 10px 12px;
+            border: 74px;
+            padding: 8px;
+        }
