@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Organisasi</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            margin: 20px;
+            color: #333333;
+        }
+
+        h1 {
+            text-align: center;
+            color: navy;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        .formulir {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #cccccc;
+        }
+
+        .deskripsi {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            width: 30%;
+        }
+
+        input[type="text"], select, textarea {
+            padding: 6px;
+            border: 1px solid #cccccc;
+        }
+
+        .kelompok {
+            margin-bottom: 10px;
+            padding: 8px;
+            background-color: #f5f5f5;
+        }
+
+        .catatan {
+            font-size: 12px;
+            color: #666666;
+        }
+
+        .tengah {
+            text-align: center;
+        }
+
+        .tombol {
+            padding: 8px 15px;
+            background-color: navy;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formulir">
+        <h1>Formulir Pendaftaran Anggota Organisasi</h1>
+
+        <p class="deskripsi">
+            Silakan isi data diri di bawah ini dengan benar untuk
+            mendaftarkan diri sebagai anggota organisasi.
+        </p>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <h2>Data Diri</h2>
+
+            <table cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td>
+                        <label for="nama"><strong>Nama Lengkap</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="nama" name="nama" size="30" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="nim"><strong>NIM</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="nim" name="nim" size="30" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="prodi"><strong>Program Studi</strong></label>
+                    </td>
+                    <td>
+                        <select id="prodi" name="prodi">
+                            <option>Informatika</option>
+                            <option>Sistem Informasi</option>
+                            <option>Teknik Industri</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email"><strong>Email</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" name="email" size="30" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="telepon"><strong>Nomor Telepon</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="telepon" name="telepon" size="30" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Jenis Kelamin</strong>
+                    </td>
+                    <td>
+                        <input type="radio" id="laki" name="jk" value="Laki-Laki" />
+                        <label for="laki">Laki-Laki</label>
+
+                        <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="semester"><strong>Semester</strong></label>
+                    </td>
+                    <td>
+                        <select id="semester" name="semester">
+                            <option>Semester 1</option>
+                            <option>Semester 2</option>
+                            <option>Semester 3</option>
+                            <option>Semester 4</option>
+                            <option>Semester 5</option>
+                            <option>Semester 6</option>
+                            <option>Semester 7</option>
+                            <option>Semester 8</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Minat dan Pengalaman</h2>
+
+            <table cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td>
+                        <strong>Divisi yang Dipilih</strong>
+                    </td>
+                    <td>
+                        <input type="radio" id="acara" name="divisi" value="Acara" />
+                        <label for="acara">Acara</label>
+
+                        <input type="radio" id="sdm" name="divisi" value="SDM" />
+                        <label for="sdm">SDM</label>
+
+                        <input type="radio" id="humas" name="divisi" value="Humas" />
+                        <label for="humas">Humas</label>
+
+                        <input type="radio" id="media" name="divisi" value="Media" />
+                        <label for="media">Media</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Pengalaman</strong>
+                    </td>
+                    <td>
+                        <div class="kelompok">
+                            <p><strong>Kegiatan yang Pernah Diikuti</strong></p>
+
+                            <input type="checkbox" id="kepanitiaan"
+                                   name="pengalaman" value="Kepanitiaan" />
+                            <label for="kepanitiaan">Kepanitiaan</label>
+                            <br />
+
+                            <input type="checkbox" id="organisasi"
+                                   name="pengalaman" value="Organisasi" />
+                            <label for="organisasi">Organisasi</label>
+                            <br />
+
+                            <input type="checkbox" id="volunteer"
+                                   name="pengalaman" value="Volunteer" />
+                            <label for="volunteer">Volunteer</label>
+                        </div>
+
+                        <div class="kelompok">
+                            <p><strong>Kemampuan yang Dimiliki</strong></p>
+
+                            <input type="checkbox" id="publicspeaking"
+                                   name="kemampuan" value="Public Speaking" />
+                            <label for="publicspeaking">Public Speaking</label>
+                            <br />
+
+                            <input type="checkbox" id="desain"
+                                   name="kemampuan" value="Desain" />
+                            <label for="desain">Desain</label>
+                            <br />
+
+                            <input type="checkbox" id="fotografi"
+                                   name="kemampuan" value="Fotografi" />
+                            <label for="fotografi">Fotografi</label>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="alasan"><strong>Alasan Bergabung</strong></label>
+                    </td>
+                    <td>
+                        <textarea id="alasan" name="alasan"
+                                  rows="6" cols="30"></textarea>
+
+                        <p class="catatan">
+                            Tuliskan alasan kamu ingin bergabung dengan organisasi ini.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="cv"><strong>Upload CV</strong></label>
+                    </td>
+                    <td>
+                        <input type="file" id="cv" name="cv"
+                               accept="application/pdf" />
+
+                        <p class="catatan">File CV harus berformat PDF.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="tengah">
+                        <input class="tombol" type="submit"
+                               name="daftar" value="Daftar Sekarang" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
